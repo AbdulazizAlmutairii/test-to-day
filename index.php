@@ -40,6 +40,7 @@ if($num>0){
         echo "<tr>";
             echo "<th>Product</th>";
             echo "<th>Price</th>";
+            echo "<th>brand</th>";
             echo "<th>Description</th>";
             echo "<th>Category</th>";
             echo "<th>Actions</th>";
@@ -52,6 +53,7 @@ if($num>0){
             echo "<tr>";
                 echo "<td>{$name}</td>";
                 echo "<td>{$price}</td>";
+                echo "<td>{$brand}</td>";
                 echo "<td>{$description}</td>";
                 echo "<td>";
                     $category->id = $category_id;

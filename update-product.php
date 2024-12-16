@@ -36,6 +36,7 @@ if($_POST){
     // set product property values
     $product->name = $_POST['name'];
     $product->price = $_POST['price'];
+    $product->brand = $_POST['brand'];
     $product->description = $_POST['description'];
     $product->category_id = $_POST['category_id'];
  
@@ -65,6 +66,10 @@ if($_POST){
         <tr>
             <td>Price</td>
             <td><input type='text' name='price' value='<?php echo $product->price; ?>' class='form-control' /></td>
+        </tr>
+        <tr>
+            <td>brand</td>
+            <td><input type='text' name='brand' value='<?php echo $product->brand; ?>' class='form-control' /></td>
         </tr>
  
         <tr>
